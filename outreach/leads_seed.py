@@ -39,7 +39,7 @@ TODAY = date.today().isoformat()
 LEADS = [
     {
         "name": "Elizabeth Danowski",
-        "title": "Founder — Revenue Operations & Strategy Leader",
+        "title": "Founder, Revenue Operations & Strategy Leader",
         "company": "PrecisionRevOps LLC",
         "profile_link": "https://www.linkedin.com/in/elizabeth-danowski-8b264513/",
         "contact_method": "LinkedIn only (no public email found)",
@@ -103,7 +103,7 @@ LEADS = [
     {
         "name": "Deepa Patel",
         "title": "Fractional Revenue & Strategy Leader",
-        "company": "Independent — C-Suite advisor across SaaS/AI/startup clients",
+        "company": "Independent, C-Suite advisor across SaaS/AI/startup clients",
         "profile_link": "https://www.linkedin.com/in/deepa--patel/",
         "contact_method": "LinkedIn only (no public email found)",
         "kind": "consultant",
@@ -124,7 +124,7 @@ LEADS = [
     {
         "name": "Mariya Valeva",
         "title": "Fractional CFO",
-        "company": "Independent — B2B SaaS clients (~$2M+ ARR)",
+        "company": "Independent, B2B SaaS clients (~$2M+ ARR)",
         "profile_link": "https://www.linkedin.com/in/mariyavaleva-yourscalingpartner/",
         "contact_method": "LinkedIn only (no public email found)",
         "kind": "consultant",
@@ -2485,7 +2485,7 @@ CONNECTORS = [
     {
         "name": "Darrell Alfonso",
         "title": "Author, \"The Marketing Operations Leader\" newsletter",
-        "company": "Substack (independent) — background includes marketing ops leadership at Amazon",
+        "company": "Substack (independent), background includes marketing ops leadership at Amazon",
         "profile_link": "https://darrellalfonso.substack.com/",
         "contact_method": "Substack / LinkedIn",
         "personal_detail": "your newsletter on marketing ops team structure and career growth",

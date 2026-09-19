@@ -7,6 +7,11 @@ gate, one tab of community "connectors" who aren't direct leads. Charles reviews
 the Leads tab and sets Status to Approved/Rejected by hand -- nothing here sends
 anything or scrapes anything live.
 
+There is no product yet. This is pre-build research: the draft messages ask how
+a person's team actually uses AI tools and whether there's any shared visibility
+across teammates, not a pitch to test something. Both tabs are sorted by
+confidence (high to low) so the most-verified people surface first.
+
 This first run is seeded from outreach/leads_seed.py: rows found via manual web
 research this session (see that file's docstring for the verification approach and
 its limits). There is intentionally no automated LinkedIn/Reddit scraper wired in --
@@ -41,6 +46,7 @@ COLUMNS = [
     ("company", "Company", 38),
     ("profile_link", "Profile / Post Link", 46),
     ("contact_method", "Best Contact Method", 26),
+    ("confidence", "Confidence", 12),
     ("summary", "Profile Summary", 55),
     ("match_reason", "Match Reason", 50),
     ("draft_message", "Draft Message", 65),
@@ -48,40 +54,60 @@ COLUMNS = [
     ("date_found", "Date Found", 14),
 ]
 
+CONFIDENCE_ORDER = {"high": 0, "medium": 1, "low": 2}
+_LOW_SIGNALS = (
+    "unconfirmed", "not confirmed", "single search snippet",
+    "lower-confidence", "lower confidence", "caveat",
+    "self-described", "self described",
+)
+_HIGH_SIGNALS = ("confirmed",)
+
+
+def confidence(row: dict) -> str:
+    """Derived from the caveats already written into summary/match_reason --
+    not a separate judgment call, just surfacing what's already on the record."""
+    text = (row.get("summary", "") + " " + row.get("match_reason", "")).lower()
+    if any(s in text for s in _LOW_SIGNALS):
+        return "low"
+    if any(s in text for s in _HIGH_SIGNALS):
+        return "high"
+    return "medium"
+
 HEADER_FILL = PatternFill(start_color="1F2937", end_color="1F2937", fill_type="solid")
 HEADER_FONT = Font(color="FFFFFF", bold=True)
 WRAP = Alignment(wrap_text=True, vertical="top")
 LINK_FONT = Font(color="1155CC", underline="single")
 
 # Personalization style per outreach-pipeline-context.md: simple, specific, no
-# overselling, consistent core value prop with a varying reference point. There is
-# no working "click to send" URL for LinkedIn DMs (not supported), so this is a
+# overselling, consistent core ask with a varying reference point. There is no
+# working "click to send" URL for LinkedIn DMs (not supported), so this is a
 # copy-paste draft, not an auto-send link -- click Profile Link, click Message,
 # paste, edit, send.
+#
+# No product exists yet, so this is not a pitch. The ask is a research question:
+# how does the person's team actually use AI tools day to day, and is there any
+# shared visibility across teammates, or does it stay solo per person. That's the
+# input to deciding what (if anything) to build.
 OPERATOR_TEMPLATE = (
-    "Hey {first_name} — saw {personal_detail}. Quick question: across your team, "
-    "does everyone end up using ChatGPT or Claude solo, with zero shared visibility "
-    "into what anyone else tried or decided? That's the exact gap I'm building "
-    "multiplayer for — a shared workspace where each person's AI agent posts its "
-    "work into one thread the whole team can see and jump into. Rounding up a few "
-    "small teams to test it free for 30-60 days in exchange for feedback — worth "
-    "a quick look?"
+    "Hey {first_name}, saw {personal_detail}. I'm looking into how small teams "
+    "actually use AI day to day before building anything. Quick question: across "
+    "your team, does everyone end up using ChatGPT or Claude on their own, or is "
+    "there any shared visibility into what people are trying or deciding? Would "
+    "you be open to a quick chat about how your team handles it?"
 )
 CONSULTANT_TEMPLATE = (
-    "Hey {first_name} — saw {personal_detail}. Curious if this resonates: across "
-    "the small teams/clients you work with, is everyone using ChatGPT or Claude on "
-    "their own, with no shared visibility into what got tried or decided? That's "
-    "the gap I'm building multiplayer for — a shared workspace where a team's AI "
-    "agents post their work into one thread instead of staying siloed in separate "
-    "chats. Looking for a few small teams to test it free in exchange for feedback "
-    "— think any of your clients (or you) would want an early look?"
+    "Hey {first_name}, saw {personal_detail}. I'm looking into how small teams "
+    "actually use AI day to day before building anything. Quick question: across "
+    "the teams or clients you work with, is AI tool usage mostly solo, or is "
+    "there any shared visibility into what's being tried? Would love your read, "
+    "open to a quick chat?"
 )
 CONNECTOR_TEMPLATE = (
-    "Hey {first_name} — saw {personal_detail}. I'm building multiplayer, a shared "
-    "AI workspace for small ops teams — not pitching the community, just curious "
-    "whether the 'everyone's using ChatGPT/Claude solo, zero shared visibility' "
-    "problem is something you hear from members often. Open to a quick chat, and "
-    "happy to share back whatever I learn."
+    "Hey {first_name}, saw {personal_detail}. I'm researching how small ops "
+    "teams actually use AI day to day, not pitching anything yet. Curious "
+    "whether solo AI usage with little shared visibility across a team is a "
+    "theme you hear from your community. Open to a quick chat, and happy to "
+    "share back whatever I learn."
 )
 
 
@@ -106,6 +132,10 @@ def dedupe(rows: list[dict]) -> list[dict]:
     return out
 
 
+def sort_by_confidence(rows: list[dict]) -> list[dict]:
+    return sorted(rows, key=lambda r: CONFIDENCE_ORDER[confidence(r)])
+
+
 def write_sheet(wb: Workbook, title: str, rows: list[dict]) -> None:
     ws = wb.create_sheet(title)
     for col_idx, (_, header, width) in enumerate(COLUMNS, start=1):
@@ -115,9 +145,15 @@ def write_sheet(wb: Workbook, title: str, rows: list[dict]) -> None:
         ws.column_dimensions[get_column_letter(col_idx)].width = width
     ws.freeze_panes = "A2"
 
-    for row_idx, row in enumerate(dedupe(rows), start=2):
+    ordered_rows = sort_by_confidence(dedupe(rows))
+    for row_idx, row in enumerate(ordered_rows, start=2):
         for col_idx, (key, _, _) in enumerate(COLUMNS, start=1):
-            value = draft_message(row) if key == "draft_message" else row.get(key, "")
+            if key == "draft_message":
+                value = draft_message(row)
+            elif key == "confidence":
+                value = confidence(row)
+            else:
+                value = row.get(key, "")
             cell = ws.cell(row=row_idx, column=col_idx, value=value)
             cell.alignment = WRAP
             if key == "profile_link" and row.get(key):

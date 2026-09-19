@@ -50,6 +50,7 @@ COLUMNS = [
 HEADER_FILL = PatternFill(start_color="1F2937", end_color="1F2937", fill_type="solid")
 HEADER_FONT = Font(color="FFFFFF", bold=True)
 WRAP = Alignment(wrap_text=True, vertical="top")
+LINK_FONT = Font(color="1155CC", underline="single")
 
 
 def dedupe(rows: list[dict]) -> list[dict]:
@@ -77,6 +78,9 @@ def write_sheet(wb: Workbook, title: str, rows: list[dict]) -> None:
         for col_idx, (key, _, _) in enumerate(COLUMNS, start=1):
             cell = ws.cell(row=row_idx, column=col_idx, value=row.get(key, ""))
             cell.alignment = WRAP
+            if key == "profile_link" and row.get(key):
+                cell.hyperlink = row[key]
+                cell.font = LINK_FONT
 
     if rows:
         status_col = next(i for i, (k, _, _) in enumerate(COLUMNS, start=1) if k == "status")

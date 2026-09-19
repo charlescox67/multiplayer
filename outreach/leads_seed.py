@@ -200,6 +200,114 @@ LEADS = [
         "status": "",
         "date_found": TODAY,
     },
+    {
+        "name": "Kristofer Wille",
+        "title": "RevOps Consultant & Advisor",
+        "company": "Independent -- RevOpsVision (Berlin)",
+        "profile_link": "https://www.linkedin.com/in/kriswille-revopsvision-revenue-operations-consultant-advisory/",
+        "contact_method": "LinkedIn only (no public email found)",
+        "summary": (
+            "10+ years in SalesOps/RevOps in Berlin's startup scene. Self-positions "
+            "explicitly as helping 'C-Level Leaders & Startups Supercharge Their "
+            "Small RevOps Teams' -- his own tagline names the exact ICP."
+        ),
+        "match_reason": (
+            "His public positioning IS the ICP description almost word-for-word "
+            "(small RevOps teams at startups). Company size self-described, not "
+            "independently verified."
+        ),
+        "status": "",
+        "date_found": TODAY,
+    },
+    {
+        "name": "Donna Sluijter",
+        "title": "Startup Operator -- RevOps & Strategy",
+        "company": "Independent / embedded RevOps for startups",
+        "profile_link": "https://www.linkedin.com/in/donnasluijter/",
+        "contact_method": "LinkedIn only (no public email found)",
+        "summary": (
+            "Self-describes as a 'Startup Operator' bridging gaps and scaling teams "
+            "in RevOps and strategy roles -- language that matches the ICP's "
+            "'founder wearing every hat' profile."
+        ),
+        "match_reason": (
+            "Title and self-description line up with the ICP almost exactly; "
+            "specific current employer/headcount not independently confirmed."
+        ),
+        "status": "",
+        "date_found": TODAY,
+    },
+    {
+        "name": "John McArdle",
+        "title": "Founder",
+        "company": "Sequoia Solutions -- RevOps/HubSpot consultancy for early-stage B2B tech",
+        "profile_link": "https://www.linkedin.com/in/john-mcardle-m-s-71b58178/",
+        "contact_method": "LinkedIn only (no public email found)",
+        "summary": (
+            "Founded a small consultancy that has worked with dozens of early-stage "
+            "companies cleaning up CRM/HubSpot data and building GTM systems -- "
+            "not the 'Sequoia' VC firm, a separate small boutique of the same name."
+        ),
+        "match_reason": (
+            "Founder-led small consultancy serving exactly the early-stage company "
+            "band multiplayer targets."
+        ),
+        "status": "",
+        "date_found": TODAY,
+    },
+    {
+        "name": "Roberto Guerra",
+        "title": "Founder",
+        "company": "Revenue Hub Latam -- RevOps + HubSpot for B2B companies in LATAM",
+        "profile_link": "https://www.linkedin.com/in/robguerra/",
+        "contact_method": "LinkedIn only (no public email found)",
+        "summary": (
+            "Runs a boutique RevOps/HubSpot consultancy for B2B companies across "
+            "LATAM, publicly writing about pipeline, CRM, forecasting -- and AI."
+        ),
+        "match_reason": (
+            "Boutique consultancy founder already writing about AI in the RevOps "
+            "workflow -- direct thematic and company-stage fit."
+        ),
+        "status": "",
+        "date_found": TODAY,
+    },
+    {
+        "name": "Kristy Buige",
+        "title": "Founder",
+        "company": "Boutique RevOps consultancy -- B2B SaaS GTM systems",
+        "profile_link": "https://www.linkedin.com/in/kristybuige/",
+        "contact_method": "LinkedIn only (no public email found)",
+        "summary": (
+            "Founded and leads a boutique RevOps consultancy enabling B2B SaaS "
+            "companies to scale GTM systems, processes, and revenue performance."
+        ),
+        "match_reason": (
+            "Founder of a small consultancy serving the same small-SaaS client "
+            "base as several other rows in this sheet -- exact company name/size "
+            "not independently confirmed beyond 'boutique.'"
+        ),
+        "status": "",
+        "date_found": TODAY,
+    },
+    {
+        "name": "Johnathan Wang",
+        "title": "Founder",
+        "company": "The SaaS Consultants -- fractional CMO / marketing agency for SaaS",
+        "profile_link": "https://www.linkedin.com/in/johnathan-wang/",
+        "contact_method": "LinkedIn only (no public email found)",
+        "summary": (
+            "Runs a small fractional-CMO agency for SaaS businesses and has "
+            "personally built social-media-management software using Python/"
+            "JavaScript and AI -- technical enough to be a strong early adopter."
+        ),
+        "match_reason": (
+            "Small agency founder who is also hands-on technical/AI-building -- "
+            "good combination of ICP fit and early-adopter likelihood."
+        ),
+        "status": "",
+        "date_found": TODAY,
+    },
 ]
 
 CONNECTORS = [

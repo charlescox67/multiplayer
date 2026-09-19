@@ -122,6 +122,84 @@ LEADS = [
         "status": "",
         "date_found": TODAY,
     },
+    {
+        "name": "Katheryn Hunt",
+        "title": "Founder & CEO",
+        "company": "GROW Marketing Agency (St. Louis, MO)",
+        "profile_link": "https://www.linkedin.com/in/katherynhunt/",
+        "contact_method": "LinkedIn only (no public email found)",
+        "summary": (
+            "Founder/CEO of a small digital marketing agency (web design, digital "
+            "marketing, branding). Confirmed small: 1-10 employees per Crunchbase, "
+            "~17 per ContactOut -- either way solidly inside the 5-50 band."
+        ),
+        "match_reason": (
+            "Confirmed small-agency founder wearing the ops hat -- one of the "
+            "cleanest company-size confirmations in this batch."
+        ),
+        "status": "",
+        "date_found": TODAY,
+    },
+    {
+        "name": "Adam Goyette",
+        "title": "Founder",
+        "company": "Growth Union (Chicago) -- boutique growth agency for early-stage B2B SaaS",
+        "profile_link": "https://www.linkedin.com/in/adam-goyette/",
+        "contact_method": "LinkedIn only (no public email found)",
+        "summary": (
+            "Ex-Help Scout / G2 growth marketing exec, now runs a small agency "
+            "assembling senior marketers for early-stage B2B SaaS clients (Writer, "
+            "RevenueHero, Recorded Future named as clients). Exact employee count "
+            "unconfirmed but the agency's model (small senior team, no bench) implies "
+            "well under 50."
+        ),
+        "match_reason": (
+            "Founder running a lean agency serving exactly the small-SaaS client base "
+            "multiplayer targets; company size inferred from agency model, not directly "
+            "confirmed -- worth a second look before approving."
+        ),
+        "status": "",
+        "date_found": TODAY,
+    },
+    {
+        "name": "David Malevsky",
+        "title": "Co-Founder",
+        "company": "Lynx Growth Agency (Hallandale Beach, FL)",
+        "profile_link": "https://www.linkedin.com/in/david-malevsky/",
+        "contact_method": "LinkedIn only (no public email found)",
+        "summary": (
+            "Co-founder of a boutique agency (patient acquisition for regenerative/"
+            "integrative clinics) built around AI-driven marketing and automation. "
+            "Employee count unconfirmed -- RocketReach shows only a handful of "
+            "verified staff, consistent with a small shop."
+        ),
+        "match_reason": (
+            "Self-describes as 'resolving business challenges using AI' -- co-founder "
+            "at a small, AI-forward agency is a strong qualitative fit even though the "
+            "exact headcount isn't independently confirmed."
+        ),
+        "status": "",
+        "date_found": TODAY,
+    },
+    {
+        "name": "Alex Zlotko",
+        "title": "CEO",
+        "company": "Forecastio (B2B sales forecasting for HubSpot)",
+        "profile_link": "https://www.linkedin.com/in/alexzlotko/",
+        "contact_method": "LinkedIn only (no public email found)",
+        "summary": (
+            "17 years in B2B sales/CS, now CEO of Forecastio, a small SaaS company "
+            "building sales forecasting tools. Publishes regularly on AI agents in "
+            "RevOps specifically."
+        ),
+        "match_reason": (
+            "Small SaaS founder/CEO already writing publicly about AI agents in "
+            "RevOps -- direct thematic overlap with multiplayer's pitch, though exact "
+            "headcount at Forecastio is unconfirmed."
+        ),
+        "status": "",
+        "date_found": TODAY,
+    },
 ]
 
 CONNECTORS = [
@@ -157,6 +235,26 @@ CONNECTORS = [
         "match_reason": (
             "Same as Darrell Alfonso above -- a distribution/connector play into the "
             "ICP audience, not a direct 5-50 person company lead."
+        ),
+        "status": "",
+        "date_found": TODAY,
+    },
+    {
+        "name": "Mike Rizzo",
+        "title": "Founder & CEO",
+        "company": "MarketingOps.com / MO Pros",
+        "profile_link": "https://www.linkedin.com/in/mikedrizzo/",
+        "contact_method": "LinkedIn only (no public email found)",
+        "summary": (
+            "Founded and runs MO Pros, the 4,000+ member marketing-ops community "
+            "outreach-pipeline-context.md names directly as a target community. "
+            "Certifies GTM Ops teams and runs the annual MOpza conference."
+        ),
+        "match_reason": (
+            "Not a cold-outreach target -- he IS the gatekeeper of the exact "
+            "community your context doc lists as a source. Worth a warmer, separate "
+            "approach (community partnership / sponsorship) rather than a first-touch "
+            "DM template."
         ),
         "status": "",
         "date_found": TODAY,

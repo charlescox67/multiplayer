@@ -1167,6 +1167,382 @@ LEADS = [
         "status": "",
         "date_found": TODAY,
     },
+    {
+        "name": "Paul Dietrich",
+        "title": "Co-Founder & CPO",
+        "company": "Spherecast (Y Combinator S24)",
+        "profile_link": "https://www.linkedin.com/in/pauldietrich98/",
+        "contact_method": "LinkedIn only (no public email found)",
+        "kind": "operator",
+        "personal_detail": "you're co-founder and CPO of Spherecast, a YC S24 company",
+        "summary": (
+            "Co-founder/CPO of a YC S24-batch startup -- accelerator batch is "
+            "public record, confirming very-early company stage."
+        ),
+        "match_reason": (
+            "YC-backed early-stage founder -- confirmed company stage; technical "
+            "co-founder role suggests strong early-adopter fit."
+        ),
+        "status": "",
+        "date_found": TODAY,
+    },
+    {
+        "name": "Avi Konduru",
+        "title": "Co-Founder",
+        "company": "Shor (Y Combinator S25)",
+        "profile_link": "https://www.linkedin.com/in/avi-konduru-54b3a6bb/",
+        "contact_method": "LinkedIn only (no public email found)",
+        "kind": "operator",
+        "personal_detail": "you're co-founder of Shor, a YC S25 company",
+        "summary": (
+            "Co-founder of a YC S25-batch startup -- confirmed very-early stage "
+            "by accelerator batch."
+        ),
+        "match_reason": (
+            "YC-backed early-stage founder -- confirmed company stage, textbook "
+            "ICP by definition."
+        ),
+        "status": "",
+        "date_found": TODAY,
+    },
+    {
+        "name": "Dhruv Roongta",
+        "title": "Co-Founder",
+        "company": "slashy.com (Y Combinator S25)",
+        "profile_link": "https://www.linkedin.com/in/dhruv-roongta-421a7b214/",
+        "contact_method": "LinkedIn only (no public email found)",
+        "kind": "operator",
+        "personal_detail": "you're co-founder of slashy.com, a YC S25 company",
+        "summary": (
+            "Co-founder of a YC S25-batch startup -- confirmed very-early stage "
+            "by accelerator batch."
+        ),
+        "match_reason": (
+            "YC-backed early-stage founder -- confirmed company stage."
+        ),
+        "status": "",
+        "date_found": TODAY,
+    },
+    {
+        "name": "Michael Kim",
+        "title": "Co-Founder",
+        "company": "AgentMail (Y Combinator S25)",
+        "profile_link": "https://www.linkedin.com/in/michaelhyunkim/",
+        "contact_method": "LinkedIn only (no public email found)",
+        "kind": "operator",
+        "personal_detail": "you're co-founder of AgentMail, a YC S25 company",
+        "summary": (
+            "Co-founder of a YC S25-batch startup building AI-agent-related "
+            "infrastructure -- confirmed very-early stage and directly AI-native."
+        ),
+        "match_reason": (
+            "YC-backed early-stage founder in the AI-agent space itself -- "
+            "strong thematic AND company-stage fit."
+        ),
+        "status": "",
+        "date_found": TODAY,
+    },
+    {
+        "name": "Ishaan Sehgal",
+        "title": "Co-Founder",
+        "company": "Omnara (Y Combinator S25)",
+        "profile_link": "https://www.linkedin.com/in/ishaan-sehgal/",
+        "contact_method": "LinkedIn only (no public email found)",
+        "kind": "operator",
+        "personal_detail": "you're co-founder of Omnara, a YC S25 company",
+        "summary": (
+            "Co-founder of a YC S25-batch startup -- confirmed very-early stage "
+            "by accelerator batch."
+        ),
+        "match_reason": (
+            "YC-backed early-stage founder -- confirmed company stage."
+        ),
+        "status": "",
+        "date_found": TODAY,
+    },
+    {
+        "name": "Raj Lad",
+        "title": "Co-Founder",
+        "company": "Infinite (Y Combinator W25)",
+        "profile_link": "https://www.linkedin.com/in/rajlad/",
+        "contact_method": "LinkedIn only (no public email found)",
+        "kind": "operator",
+        "personal_detail": "you're co-founder of Infinite, a YC W25 company, previously at Sardine",
+        "summary": (
+            "Co-founder of a YC W25-batch startup -- confirmed very-early stage "
+            "by accelerator batch."
+        ),
+        "match_reason": (
+            "YC-backed early-stage founder -- confirmed company stage."
+        ),
+        "status": "",
+        "date_found": TODAY,
+    },
+    {
+        "name": "Kushal Mohta",
+        "title": "Co-Founder",
+        "company": "Optifye.ai (Y Combinator W25)",
+        "profile_link": "https://www.linkedin.com/in/kushal-mohta-6926931b4/",
+        "contact_method": "LinkedIn only (no public email found)",
+        "kind": "operator",
+        "personal_detail": "you're co-founder of Optifye.ai, a YC W25 company",
+        "summary": (
+            "Co-founder of a YC W25-batch AI startup -- confirmed very-early "
+            "stage and directly AI-native."
+        ),
+        "match_reason": (
+            "YC-backed early-stage AI founder -- strong thematic AND "
+            "company-stage fit."
+        ),
+        "status": "",
+        "date_found": TODAY,
+    },
+    {
+        "name": "Nand Vinchhi",
+        "title": "Co-Founder",
+        "company": "Axal (Y Combinator W25)",
+        "profile_link": "https://www.linkedin.com/in/nandvinchhi/",
+        "contact_method": "LinkedIn only (no public email found)",
+        "kind": "operator",
+        "personal_detail": "you're co-founder of Axal, a YC W25 company",
+        "summary": (
+            "Co-founder of a YC W25-batch startup -- confirmed very-early stage "
+            "by accelerator batch."
+        ),
+        "match_reason": (
+            "YC-backed early-stage founder -- confirmed company stage."
+        ),
+        "status": "",
+        "date_found": TODAY,
+    },
+    {
+        "name": "William Barthell",
+        "title": "Co-Founder",
+        "company": "Janet AI (Y Combinator S25)",
+        "profile_link": "https://www.linkedin.com/in/william-barthell/",
+        "contact_method": "LinkedIn only (no public email found)",
+        "kind": "operator",
+        "personal_detail": "you're co-founder of Janet AI, a YC S25 company",
+        "summary": (
+            "Co-founder of a YC S25-batch AI startup -- confirmed very-early "
+            "stage and directly AI-native."
+        ),
+        "match_reason": (
+            "YC-backed early-stage AI founder -- strong thematic AND "
+            "company-stage fit."
+        ),
+        "status": "",
+        "date_found": TODAY,
+    },
+    {
+        "name": "Aditya Iyengar",
+        "title": "Co-Founder",
+        "company": "Candor (Y Combinator W25)",
+        "profile_link": "https://www.linkedin.com/in/aditya-v-iyengar/",
+        "contact_method": "LinkedIn only (no public email found)",
+        "kind": "operator",
+        "personal_detail": "you're co-founder of Candor, a YC W25 company focused on insider-risk",
+        "summary": (
+            "Co-founder of a YC W25-batch startup -- confirmed very-early stage "
+            "by accelerator batch."
+        ),
+        "match_reason": (
+            "YC-backed early-stage founder -- confirmed company stage."
+        ),
+        "status": "",
+        "date_found": TODAY,
+    },
+    {
+        "name": "Adam Wooten",
+        "title": "Founder",
+        "company": "Taia -- translation workflow platform / AI consultant",
+        "profile_link": "https://www.linkedin.com/in/adamwooten/",
+        "contact_method": "LinkedIn only (no public email found)",
+        "kind": "operator",
+        "personal_detail": "you built Taia, a workflow system addressing friction in translation processes",
+        "summary": (
+            "Translation-tech/AI consultant and founder of a small workflow "
+            "platform. Headcount unconfirmed."
+        ),
+        "match_reason": (
+            "Small AI-native tooling founder -- direct thematic fit, different "
+            "vertical (localization) for diversification."
+        ),
+        "status": "",
+        "date_found": TODAY,
+    },
+    {
+        "name": "Ebru Yildirim",
+        "title": "Founder & CEO",
+        "company": "Ollang -- localization",
+        "profile_link": "https://www.linkedin.com/in/ebru-yildirim-ollang/",
+        "contact_method": "LinkedIn only (no public email found)",
+        "kind": "operator",
+        "personal_detail": "your take that AI translating doesn't mean localization is solved",
+        "summary": (
+            "Founder/CEO of a small localization company with two decades of "
+            "enterprise localization experience, publicly skeptical of "
+            "AI-solves-everything narratives -- a thoughtful, engaged voice."
+        ),
+        "match_reason": (
+            "Small agency founder actively engaging with AI's real limits in her "
+            "field -- a more skeptical but still relevant prospect."
+        ),
+        "status": "",
+        "date_found": TODAY,
+    },
+    {
+        "name": "Adriana Biarnes Garcia",
+        "title": "Founder",
+        "company": "Libre Design Studio -- design studio for founders/startups",
+        "profile_link": "https://www.linkedin.com/in/adriana-biarnes-garcia/",
+        "contact_method": "LinkedIn only (no public email found)",
+        "kind": "operator",
+        "personal_detail": "you run Libre Design Studio specifically for founders and startups",
+        "summary": (
+            "Founder of a small design studio explicitly positioned to serve "
+            "founders/startups. Headcount unconfirmed."
+        ),
+        "match_reason": (
+            "Small studio founder serving the exact startup client base "
+            "multiplayer targets."
+        ),
+        "status": "",
+        "date_found": TODAY,
+    },
+    {
+        "name": "Atiqur Rahaman",
+        "title": "Founder",
+        "company": "Design Monks",
+        "profile_link": "https://www.linkedin.com/in/atiq31416/",
+        "contact_method": "LinkedIn only (no public email found)",
+        "kind": "operator",
+        "personal_detail": "you founded Design Monks",
+        "summary": (
+            "Founder of a small design agency. Headcount unconfirmed -- single "
+            "search snippet only."
+        ),
+        "match_reason": (
+            "Small agency founder -- company-stage fit inferred from agency type, "
+            "lower-confidence single-source finding."
+        ),
+        "status": "",
+        "date_found": TODAY,
+    },
+    {
+        "name": "Crystal J. Morgan",
+        "title": "Fractional Customer Success Consultant",
+        "company": "Independent -- serves SaaS founders and CS teams",
+        "profile_link": "https://www.linkedin.com/in/crystaljmorgan/",
+        "contact_method": "LinkedIn only (no public email found)",
+        "kind": "consultant",
+        "personal_detail": "you help SaaS founders and CS teams with customer success operations as a fractional consultant",
+        "summary": (
+            "Fractional Customer Success consultant serving multiple small SaaS "
+            "clients at once -- same fractional-across-many-teams pattern as "
+            "other consultant rows in this sheet."
+        ),
+        "match_reason": (
+            "Fractional CS consultant across small SaaS clients -- ops-adjacent "
+            "vertical (customer success) not yet represented in this sheet."
+        ),
+        "status": "",
+        "date_found": TODAY,
+    },
+    {
+        "name": "Thomas Christensen",
+        "title": "Founder",
+        "company": "Revora Consultants -- Customer Success consulting for B2B SaaS",
+        "profile_link": "https://www.linkedin.com/in/thomas-christensen-0814a39/",
+        "contact_method": "LinkedIn only (no public email found)",
+        "kind": "consultant",
+        "personal_detail": "you help B2B SaaS companies turn Customer Success into measurable revenue at Revora Consultants",
+        "summary": (
+            "Founder of a small CS consultancy for B2B SaaS companies. "
+            "Headcount unconfirmed."
+        ),
+        "match_reason": (
+            "Small CS consultancy founder serving the exact small-SaaS client "
+            "base multiplayer targets."
+        ),
+        "status": "",
+        "date_found": TODAY,
+    },
+    {
+        "name": "Peter Varga",
+        "title": "Founder",
+        "company": "Lafluence & Trendin -- AI-native OS for influencer agencies",
+        "profile_link": "https://www.linkedin.com/in/petervarga1/",
+        "contact_method": "LinkedIn only (no public email found)",
+        "kind": "operator",
+        "personal_detail": "you're building Trendin, an AI-native operating system for influencer agencies",
+        "summary": (
+            "Ex-Google, founder of two small companies including an explicitly "
+            "AI-native product for influencer agencies. Headcount unconfirmed."
+        ),
+        "match_reason": (
+            "AI-native small-company founder -- direct thematic fit."
+        ),
+        "status": "",
+        "date_found": TODAY,
+    },
+    {
+        "name": "Jamiu Akanbi",
+        "title": "Founder",
+        "company": "Hidden Gems -- creator-led growth for B2B AI & SaaS companies",
+        "profile_link": "https://www.linkedin.com/in/jamiu-akanbi/",
+        "contact_method": "LinkedIn only (no public email found)",
+        "kind": "operator",
+        "personal_detail": "you're running Hidden Gems, focused on creator-led growth specifically for B2B AI & SaaS companies",
+        "summary": (
+            "Founder of a small agency specializing in B2B AI/SaaS client growth "
+            "-- serves exactly multiplayer's target client base."
+        ),
+        "match_reason": (
+            "Agency founder specializing in the B2B AI/SaaS vertical multiplayer "
+            "targets -- strong client-overlap fit."
+        ),
+        "status": "",
+        "date_found": TODAY,
+    },
+    {
+        "name": "Krishna Kammili",
+        "title": "Founder",
+        "company": "LegalConnect -- AI-assisted legal documents for SMEs",
+        "profile_link": "https://www.linkedin.com/in/krishnakammili/",
+        "contact_method": "LinkedIn only (no public email found)",
+        "kind": "operator",
+        "personal_detail": "you built LegalConnect to deliver AI-drafted, solicitor-reviewed legal documents for SMEs",
+        "summary": (
+            "Founder of a small legal-tech company already combining AI drafting "
+            "with human review. Headcount unconfirmed."
+        ),
+        "match_reason": (
+            "AI-native small-company founder in an underrepresented vertical "
+            "(legal tech) -- direct thematic fit, good diversification."
+        ),
+        "status": "",
+        "date_found": TODAY,
+    },
+    {
+        "name": "Jay Pietig",
+        "title": "Founding Partner",
+        "company": "Startup Legal Group, LLC (Kansas City)",
+        "profile_link": "https://www.linkedin.com/in/jay-pietig-startuplegalgroup/",
+        "contact_method": "LinkedIn only (no public email found)",
+        "kind": "consultant",
+        "personal_detail": "you run Startup Legal Group, serving startup clients directly",
+        "summary": (
+            "Founding partner of a small legal practice explicitly serving "
+            "startup clients. Headcount unconfirmed."
+        ),
+        "match_reason": (
+            "Small legal practice founder serving the exact startup client base "
+            "multiplayer targets -- underrepresented vertical for diversification."
+        ),
+        "status": "",
+        "date_found": TODAY,
+    },
 ]
 
 CONNECTORS = [

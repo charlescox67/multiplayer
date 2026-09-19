@@ -887,6 +887,286 @@ LEADS = [
         "status": "",
         "date_found": TODAY,
     },
+    {
+        "name": "Parry Headrick",
+        "title": "Founder",
+        "company": "Crackle PR -- B2B tech PR agency (Boston)",
+        "profile_link": "https://www.linkedin.com/in/parryheadrick/",
+        "contact_method": "LinkedIn only (no public email found)",
+        "kind": "operator",
+        "personal_detail": "you're leading a team of senior PR leaders at Crackle PR",
+        "summary": (
+            "Founder of a small B2B tech PR agency. Headcount unconfirmed."
+        ),
+        "match_reason": (
+            "B2B-tech-focused small agency founder -- adjacent vertical (PR) "
+            "serving the same kind of small SaaS/tech clients."
+        ),
+        "status": "",
+        "date_found": TODAY,
+    },
+    {
+        "name": "Carin Warner",
+        "title": "Co-Founder",
+        "company": "Warner Communications -- PR & comms strategy",
+        "profile_link": "https://www.linkedin.com/in/carinwarner/",
+        "contact_method": "LinkedIn only (no public email found)",
+        "kind": "operator",
+        "personal_detail": "your writing on AI strategy in communications",
+        "summary": (
+            "Co-founder of a small PR/comms firm, publishes on AI strategy in "
+            "communications specifically. Headcount unconfirmed."
+        ),
+        "match_reason": (
+            "Small agency co-founder already writing about AI strategy in her own "
+            "field -- strong thematic fit."
+        ),
+        "status": "",
+        "date_found": TODAY,
+    },
+    {
+        "name": "Erika Torres",
+        "title": "Founder",
+        "company": "85th & Park Inc. -- creative marketing & communications agency",
+        "profile_link": "https://www.linkedin.com/in/erika-torres85/",
+        "contact_method": "LinkedIn only (no public email found)",
+        "kind": "operator",
+        "personal_detail": "you're running 85th & Park, a culture-driven creative marketing and comms agency",
+        "summary": (
+            "Founder of a small creative marketing/communications agency. "
+            "Headcount unconfirmed."
+        ),
+        "match_reason": (
+            "Small agency founder -- company-stage fit inferred from agency type."
+        ),
+        "status": "",
+        "date_found": TODAY,
+    },
+    {
+        "name": "Sam Poutakidis",
+        "title": "Founder",
+        "company": "New AI Automation Agency",
+        "profile_link": "https://www.linkedin.com/in/sampoutakidis/",
+        "contact_method": "LinkedIn only (no public email found)",
+        "kind": "operator",
+        "personal_detail": "you just founded a new AI automation agency",
+        "summary": (
+            "Founder of a brand-new AI automation agency. Very early-stage by "
+            "definition; single search snippet only."
+        ),
+        "match_reason": (
+            "Newest-stage AI-native agency founder in this sheet -- strong "
+            "thematic fit, lower-confidence single-source finding."
+        ),
+        "status": "",
+        "date_found": TODAY,
+    },
+    {
+        "name": "M Kazemi",
+        "title": "Founder & CEO",
+        "company": "Web design agency (Issaquah, WA)",
+        "profile_link": "https://www.linkedin.com/in/m-kazemi-098880242/",
+        "contact_method": "LinkedIn only (no public email found)",
+        "kind": "operator",
+        "personal_detail": "you're running your own web design agency",
+        "summary": (
+            "Founder/CEO of a small web design agency. Headcount unconfirmed."
+        ),
+        "match_reason": (
+            "Small agency founder -- company-stage fit inferred from agency type."
+        ),
+        "status": "",
+        "date_found": TODAY,
+    },
+    {
+        "name": "Michael Lieu",
+        "title": "Co-Founder",
+        "company": "Boldly -- design agency (London)",
+        "profile_link": "https://www.linkedin.com/in/michael-lieu-77746972/",
+        "contact_method": "LinkedIn only (no public email found)",
+        "kind": "operator",
+        "personal_detail": "you're running Boldly with a small team of creative minds",
+        "summary": (
+            "Co-founder of an award-winning design agency explicitly described as "
+            "a small team. Good qualitative size signal."
+        ),
+        "match_reason": (
+            "Explicitly 'small team' self-positioning -- solid company-size signal "
+            "without a hard headcount number."
+        ),
+        "status": "",
+        "date_found": TODAY,
+    },
+    {
+        "name": "Kristen Ransom",
+        "title": "CTO & Founder",
+        "company": "IncluDe Web Design and Development Agency",
+        "profile_link": "https://www.linkedin.com/in/kristen-m-ransom/",
+        "contact_method": "LinkedIn only (no public email found)",
+        "kind": "operator",
+        "personal_detail": "your interest in AI adoption for web design and development",
+        "summary": (
+            "CTO/Founder of a small web design/dev agency, publicly interested in "
+            "AI adoption for the field. Headcount unconfirmed."
+        ),
+        "match_reason": (
+            "Technical founder already thinking about AI adoption -- good "
+            "early-adopter signal."
+        ),
+        "status": "",
+        "date_found": TODAY,
+    },
+    {
+        "name": "Stefen Phelps",
+        "title": "Co-Founder",
+        "company": "Kelp Creative Agency",
+        "profile_link": "https://www.linkedin.com/in/stefenphelps/",
+        "contact_method": "LinkedIn only (no public email found)",
+        "kind": "operator",
+        "personal_detail": "you co-founded Kelp Creative Agency",
+        "summary": (
+            "Software engineer and co-founder of a small creative agency. "
+            "Headcount unconfirmed -- single search snippet only."
+        ),
+        "match_reason": (
+            "Technical co-founder at a small creative agency -- good blend of "
+            "ICP fit and technical early-adopter likelihood."
+        ),
+        "status": "",
+        "date_found": TODAY,
+    },
+    {
+        "name": "Dean Swennumson",
+        "title": "Co-Founder, Head of Operations",
+        "company": "Superstate",
+        "profile_link": "https://www.linkedin.com/in/dean-swennumson-075798125/",
+        "contact_method": "LinkedIn only (no public email found)",
+        "kind": "operator",
+        "personal_detail": "you're co-founder and Head of Operations at Superstate",
+        "summary": (
+            "Co-founder wearing the Head of Operations hat at an early-stage "
+            "startup. Headcount unconfirmed."
+        ),
+        "match_reason": (
+            "Textbook 'founder wearing the ops hat' ICP fit; company size "
+            "inferred from co-founder/early-stage framing, not confirmed."
+        ),
+        "status": "",
+        "date_found": TODAY,
+    },
+    {
+        "name": "Leah Bolden",
+        "title": "Co-Founder & Head of Operations",
+        "company": "See Jane Drill",
+        "profile_link": "https://www.linkedin.com/in/leah-bolden-24419314",
+        "contact_method": "LinkedIn only (no public email found)",
+        "kind": "operator",
+        "personal_detail": "you're co-founder and Head of Operations at See Jane Drill",
+        "summary": (
+            "Co-founder/Head of Operations at a small DIY-resource startup. "
+            "Headcount unconfirmed."
+        ),
+        "match_reason": (
+            "Founder wearing the ops hat at an early-stage company -- solid ICP "
+            "fit by role and company stage."
+        ),
+        "status": "",
+        "date_found": TODAY,
+    },
+    {
+        "name": "Michael McCormack",
+        "title": "Co-Founder & COO",
+        "company": "10X ERP",
+        "profile_link": "https://www.linkedin.com/in/michael-mccormack-10xerp/",
+        "contact_method": "LinkedIn only (no public email found)",
+        "kind": "operator",
+        "personal_detail": "you're co-founder and de-facto Operations Manager at 10X ERP",
+        "summary": (
+            "Co-founder/COO of a small startup, explicitly noted as acting as the "
+            "de-facto Operations Manager -- wearing multiple hats."
+        ),
+        "match_reason": (
+            "Co-founder explicitly wearing both COO and hands-on ops-manager "
+            "hats -- strong 'founder wearing every hat' ICP fit."
+        ),
+        "status": "",
+        "date_found": TODAY,
+    },
+    {
+        "name": "Pavels Mordvicevs",
+        "title": "Founder",
+        "company": "Camel Digital -- PPC agency for B2B SaaS",
+        "profile_link": "https://www.linkedin.com/in/pavels-mordvicevs-2aaa4666/",
+        "contact_method": "LinkedIn only (no public email found)",
+        "kind": "operator",
+        "personal_detail": "you're targeting B2B SaaS founders specifically through Camel Digital",
+        "summary": (
+            "Founder of a small PPC agency explicitly targeting B2B SaaS founders "
+            "-- serves exactly multiplayer's target client base."
+        ),
+        "match_reason": (
+            "Agency founder specializing in the B2B SaaS vertical multiplayer "
+            "targets -- strong client-overlap fit, same pattern as Oles Dziub."
+        ),
+        "status": "",
+        "date_found": TODAY,
+    },
+    {
+        "name": "Aaron Arnold",
+        "title": "Founder",
+        "company": "FeatherDot Media Group LLC -- video production/growth",
+        "profile_link": "https://www.linkedin.com/in/fdmg/",
+        "contact_method": "LinkedIn only (no public email found)",
+        "kind": "operator",
+        "personal_detail": "your work helping brands scale with strategic video content and AI repurposing",
+        "summary": (
+            "Founder of a small video production/growth agency, explicitly "
+            "positions AI repurposing as part of the offering."
+        ),
+        "match_reason": (
+            "AI-forward small agency founder -- direct thematic fit."
+        ),
+        "status": "",
+        "date_found": TODAY,
+    },
+    {
+        "name": "Evan Cassidy",
+        "title": "CEO & Founder",
+        "company": "Boomin' Brands Media",
+        "profile_link": "https://www.linkedin.com/in/evanbcassidy/",
+        "contact_method": "LinkedIn only (no public email found)",
+        "kind": "operator",
+        "personal_detail": "you're using AI tools like Heygen and Freepik at Boomin' Brands Media",
+        "summary": (
+            "Founder/CEO of a small creative media agency, already using AI "
+            "content tools in production. Headcount unconfirmed."
+        ),
+        "match_reason": (
+            "Small agency founder already hands-on with AI production tools -- "
+            "good early-adopter signal."
+        ),
+        "status": "",
+        "date_found": TODAY,
+    },
+    {
+        "name": "Yash Arora",
+        "title": "Founder / Producer",
+        "company": "Lemonade Creatives",
+        "profile_link": "https://www.linkedin.com/in/yasharora16/",
+        "contact_method": "LinkedIn only (no public email found)",
+        "kind": "operator",
+        "personal_detail": "your AI-led creative production work at Lemonade Creatives",
+        "summary": (
+            "Founder/producer of a small creative production studio incorporating "
+            "AI-led production. Headcount unconfirmed."
+        ),
+        "match_reason": (
+            "Small agency founder already building AI into the production "
+            "pipeline -- direct thematic fit."
+        ),
+        "status": "",
+        "date_found": TODAY,
+    },
 ]
 
 CONNECTORS = [

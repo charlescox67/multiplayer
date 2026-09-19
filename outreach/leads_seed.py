@@ -638,6 +638,255 @@ LEADS = [
         "status": "",
         "date_found": TODAY,
     },
+    {
+        "name": "David Simões",
+        "title": "Founder",
+        "company": "Sounds Good Agency -- Shopify Plus partner (CEE region)",
+        "profile_link": "https://cz.linkedin.com/in/davidjsimoes/en",
+        "contact_method": "LinkedIn only (no public email found)",
+        "kind": "operator",
+        "personal_detail": "you describe your business as having an AI-first mindset while running Sounds Good Agency",
+        "summary": (
+            "Founder of a Shopify Plus agency serving DTC/B2B/Retail brands, "
+            "self-describes as having an 'AI-first business mindset.' Headcount "
+            "unconfirmed."
+        ),
+        "match_reason": (
+            "Small agency founder explicitly framing the business around AI-first "
+            "thinking -- strong thematic fit."
+        ),
+        "status": "",
+        "date_found": TODAY,
+    },
+    {
+        "name": "Mark Kennaley",
+        "title": "Founder & CEO",
+        "company": "SoftwareFactory.ai -- AI-native software engineering consultancy",
+        "profile_link": "https://www.linkedin.com/in/markkennaley/",
+        "contact_method": "LinkedIn only (no public email found)",
+        "kind": "operator",
+        "personal_detail": "you're a pioneer in AI-native software engineering as founder of SoftwareFactory.ai",
+        "summary": (
+            "Founder/CEO of a small AI-native software engineering consultancy. "
+            "Headcount unconfirmed."
+        ),
+        "match_reason": (
+            "Small AI-forward software consultancy founder -- exactly the kind of "
+            "technical early adopter this product needs."
+        ),
+        "status": "",
+        "date_found": TODAY,
+    },
+    {
+        "name": "Philip Ledgerwood",
+        "title": "AI Consultant / Software Developer",
+        "company": "Independent -- solo AI consulting practice",
+        "profile_link": "https://www.linkedin.com/in/phil-ledgerwood/",
+        "contact_method": "LinkedIn only (no public email found)",
+        "kind": "consultant",
+        "personal_detail": "you help companies use AI securely and purposefully as an independent consultant",
+        "summary": (
+            "Solo independent consultant helping companies adopt AI securely. "
+            "One-person practice -- same 'no one to share context with' signal as "
+            "other solo consultants in this sheet."
+        ),
+        "match_reason": (
+            "Solo AI consultant -- direct thematic fit and purest form of the "
+            "company-stage signal."
+        ),
+        "status": "",
+        "date_found": TODAY,
+    },
+    {
+        "name": "Dylan Kinder",
+        "title": "Independent AI Consultant",
+        "company": "Independent -- installs AI systems into service businesses",
+        "profile_link": "https://www.linkedin.com/in/dylankinder/",
+        "contact_method": "LinkedIn only (no public email found)",
+        "kind": "consultant",
+        "personal_detail": "you install AI systems into service businesses as an independent consultant",
+        "summary": (
+            "Solo consultant helping small service businesses adopt AI tooling. "
+            "Weaker verification -- single search snippet only."
+        ),
+        "match_reason": (
+            "Solo AI-adoption consultant serving small businesses -- direct "
+            "thematic fit, lower-confidence single-source finding."
+        ),
+        "status": "",
+        "date_found": TODAY,
+    },
+    {
+        "name": "Alex Marantelos",
+        "title": "Co-Founder / CEO",
+        "company": "Intryc (Y Combinator S24)",
+        "profile_link": "https://www.linkedin.com/in/alexmarantelos/",
+        "contact_method": "LinkedIn only (no public email found)",
+        "kind": "operator",
+        "personal_detail": "you're co-founder/CEO of Intryc, a Y Combinator S24 startup",
+        "summary": (
+            "Co-founder/CEO of a YC S24-batch startup -- confirmed very-early-stage "
+            "by accelerator batch, though exact current headcount unconfirmed."
+        ),
+        "match_reason": (
+            "YC-backed early-stage founder -- confirmed company stage (accelerator "
+            "batch is public record) even without a hard headcount number."
+        ),
+        "status": "",
+        "date_found": TODAY,
+    },
+    {
+        "name": "Arham Khan",
+        "title": "Founder",
+        "company": "Pixated -- performance marketing agency (paid social/search)",
+        "profile_link": "https://uk.linkedin.com/in/arhamkhan",
+        "contact_method": "LinkedIn only (no public email found)",
+        "kind": "operator",
+        "personal_detail": "you founded Pixated, a performance marketing agency",
+        "summary": (
+            "Founder of a small performance marketing agency. Headcount "
+            "unconfirmed."
+        ),
+        "match_reason": (
+            "Small agency founder -- company-stage fit inferred from agency type."
+        ),
+        "status": "",
+        "date_found": TODAY,
+    },
+    {
+        "name": "Alex Brown",
+        "title": "Founder & CEO",
+        "company": "Tierra -- performance marketing agency for DTC ecommerce",
+        "profile_link": "https://www.linkedin.com/in/alex-brown-tierra/",
+        "contact_method": "LinkedIn only (no public email found)",
+        "kind": "operator",
+        "personal_detail": "you're scaling DTC ecommerce brands through Tierra",
+        "summary": (
+            "Founder/CEO of a small performance marketing agency for DTC ecommerce "
+            "brands. Headcount unconfirmed."
+        ),
+        "match_reason": (
+            "Small agency founder -- company-stage fit inferred from agency type."
+        ),
+        "status": "",
+        "date_found": TODAY,
+    },
+    {
+        "name": "Oles Dziub",
+        "title": "Co-Founder",
+        "company": "Hey Digital -- SaaS performance marketing & creative agency",
+        "profile_link": "https://www.linkedin.com/in/oles-dziub-b2b-saas-paid-ads-expert/",
+        "contact_method": "LinkedIn only (no public email found)",
+        "kind": "operator",
+        "personal_detail": "you're running Hey Digital, a performance marketing agency focused specifically on B2B SaaS",
+        "summary": (
+            "Co-founder of a small agency specializing in paid ads for B2B SaaS "
+            "companies -- serves exactly multiplayer's target client base."
+        ),
+        "match_reason": (
+            "Agency founder specializing in the B2B SaaS vertical multiplayer "
+            "targets -- strong client-overlap fit."
+        ),
+        "status": "",
+        "date_found": TODAY,
+    },
+    {
+        "name": "Beckie Blackburn-Cooper",
+        "title": "Founder",
+        "company": "Boutique recruiting agency",
+        "profile_link": "https://www.linkedin.com/in/beckie-blackburn-cooper-bri/",
+        "contact_method": "LinkedIn only (no public email found)",
+        "kind": "operator",
+        "personal_detail": "you run a boutique recruiting agency with a niche sector focus",
+        "summary": (
+            "Founder of a small, self-described boutique recruiting agency. "
+            "Headcount unconfirmed."
+        ),
+        "match_reason": (
+            "Explicitly 'boutique' self-positioning -- good qualitative size "
+            "signal; different vertical (recruiting) than most of this sheet, "
+            "useful diversification."
+        ),
+        "status": "",
+        "date_found": TODAY,
+    },
+    {
+        "name": "Katie Matthews",
+        "title": "Founder & CEO",
+        "company": "CollabRecruit -- small recruiting agency",
+        "profile_link": "https://www.linkedin.com/in/kmtalentfinder/",
+        "contact_method": "LinkedIn only (no public email found)",
+        "kind": "operator",
+        "personal_detail": "your writing on balancing technology and human connection in recruiting at CollabRecruit",
+        "summary": (
+            "Founder/CEO of a small recruiting agency, writes publicly about "
+            "technology's role in staffing. Headcount unconfirmed."
+        ),
+        "match_reason": (
+            "Small agency founder already thinking publicly about tech's role in "
+            "her business -- good adoption-readiness signal."
+        ),
+        "status": "",
+        "date_found": TODAY,
+    },
+    {
+        "name": "Becky Kuntz",
+        "title": "Founder",
+        "company": "BK's Bookkeeping",
+        "profile_link": "https://www.linkedin.com/in/becky-kuntz/",
+        "contact_method": "LinkedIn only (no public email found)",
+        "kind": "operator",
+        "personal_detail": "you help small business owners get time back through BK's Bookkeeping",
+        "summary": (
+            "Founder of a small virtual bookkeeping practice serving small-business "
+            "clients. Finance-ops-adjacent, similar band to Mariya Valeva elsewhere "
+            "in this sheet."
+        ),
+        "match_reason": (
+            "Small finance-ops shop founder -- weaker fit than marketing/RevOps "
+            "rows but same company-stage band and same 'wearing every hat' pain."
+        ),
+        "status": "",
+        "date_found": TODAY,
+    },
+    {
+        "name": "Tom Wells",
+        "title": "Business Development",
+        "company": "Wells Virtual Bookkeeping, LLC",
+        "profile_link": "https://www.linkedin.com/in/tom-wells-rad60/",
+        "contact_method": "LinkedIn only (no public email found)",
+        "kind": "operator",
+        "personal_detail": "you're part of an AI Mastermind group applying tech-forward solutions to bookkeeping",
+        "summary": (
+            "Small virtual bookkeeping practice; actively participates in an AI "
+            "Mastermind group -- already engaged with AI adoption specifically."
+        ),
+        "match_reason": (
+            "Small ops-adjacent shop already active in an AI-adoption community -- "
+            "good readiness signal despite being outside core marketing/RevOps."
+        ),
+        "status": "",
+        "date_found": TODAY,
+    },
+    {
+        "name": "Jennifer Perez-Fong",
+        "title": "CEO",
+        "company": "Bookkeeping Done Right",
+        "profile_link": "https://www.linkedin.com/in/jennifer-perez-fong-cpa/",
+        "contact_method": "LinkedIn only (no public email found)",
+        "kind": "operator",
+        "personal_detail": "you founded Bookkeeping Done Right to serve small and medium businesses in South Florida",
+        "summary": (
+            "CEO/founder of a small accounting practice serving SMBs, founded "
+            "2013. Headcount unconfirmed."
+        ),
+        "match_reason": (
+            "Small finance-ops shop founder -- same lower-priority band as other "
+            "bookkeeping rows in this sheet."
+        ),
+        "status": "",
+        "date_found": TODAY,
+    },
 ]
 
 CONNECTORS = [

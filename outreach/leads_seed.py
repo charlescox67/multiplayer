@@ -348,6 +348,296 @@ LEADS = [
         "status": "",
         "date_found": TODAY,
     },
+    {
+        "name": "Shaun Anderson",
+        "title": "Founder",
+        "company": "thisisagency.ai / hobo-web.co.uk -- forensic SEO agency",
+        "profile_link": "https://www.linkedin.com/in/shaun-anderson-hobo/",
+        "contact_method": "LinkedIn only (no public email found)",
+        "kind": "operator",
+        "personal_detail": "you're building agentic AI systems as an AI Marketing Engineer while running thisisagency.ai",
+        "summary": (
+            "Founder of a small forensic-SEO agency, also positions himself as an "
+            "AI Marketing Engineer building agentic AI systems. Found via a single "
+            "search pass, not cross-verified for exact headcount."
+        ),
+        "match_reason": (
+            "Small agency founder already hands-on with agentic AI -- strong "
+            "thematic fit; company size inferred from agency type, not confirmed."
+        ),
+        "status": "",
+        "date_found": TODAY,
+    },
+    {
+        "name": "Jackie Connors",
+        "title": "Founder & CEO",
+        "company": "Digital Marketing Direction -- virtual HubSpot partner agency",
+        "profile_link": "https://www.linkedin.com/in/jackiebconnors/",
+        "contact_method": "LinkedIn only (no public email found)",
+        "kind": "operator",
+        "personal_detail": "you run Digital Marketing Direction as a virtual HubSpot partner agency",
+        "summary": (
+            "Founder/CEO of a small virtual agency offering HubSpot/inbound "
+            "training, consulting and content marketing. Size not independently "
+            "confirmed beyond 'virtual agency' framing."
+        ),
+        "match_reason": (
+            "Founder-led small HubSpot partner shop -- same ops-tooling audience "
+            "multiplayer is targeting."
+        ),
+        "status": "",
+        "date_found": TODAY,
+    },
+    {
+        "name": "Sam Anderson",
+        "title": "Chief Growth Officer / Founder",
+        "company": "Origin 63 -- small growth agency",
+        "profile_link": "https://www.linkedin.com/in/samanderson41/",
+        "contact_method": "LinkedIn only (no public email found)",
+        "kind": "operator",
+        "personal_detail": "you're running Origin 63 as a small, results-focused growth agency",
+        "summary": (
+            "Founder-level growth leader at a self-described small agency. Weaker "
+            "verification than other rows -- single search snippet only."
+        ),
+        "match_reason": (
+            "Small growth-agency founder; include but treat as lower-confidence "
+            "given only one source found."
+        ),
+        "status": "",
+        "date_found": TODAY,
+    },
+    {
+        "name": "Josh Harcus",
+        "title": "Revenue Growth & Retention Lead",
+        "company": "Hüify -- HubSpot partner agency",
+        "profile_link": "https://www.linkedin.com/in/joshharcus/",
+        "contact_method": "LinkedIn only (no public email found)",
+        "kind": "operator",
+        "personal_detail": "your work on revenue growth and retention at Hüify, a HubSpot partner agency",
+        "summary": (
+            "Works on revenue growth/retention at a HubSpot partner agency. Exact "
+            "headcount at Hüify unconfirmed."
+        ),
+        "match_reason": (
+            "HubSpot-partner-agency operator in the ops-tooling audience; company "
+            "size inferred, not confirmed."
+        ),
+        "status": "",
+        "date_found": TODAY,
+    },
+    {
+        "name": "Alex Williams",
+        "title": "Independent HubSpot Consultant",
+        "company": "Independent -- solo HubSpot consulting practice",
+        "profile_link": "https://www.linkedin.com/in/awoxford/",
+        "contact_method": "LinkedIn only (no public email found)",
+        "kind": "consultant",
+        "personal_detail": "you run your own solo HubSpot consulting practice",
+        "summary": (
+            "Solo independent HubSpot implementation/strategy consultant -- a "
+            "one-person shop, which is close to the purest form of the "
+            "'wearing every hat, no one to share tool context with' ICP signal."
+        ),
+        "match_reason": (
+            "Solo consultant -- exact company-stage fit by definition, though this "
+            "is a one-person 'team' rather than 5-50 people; worth including as a "
+            "different flavor of the same pain (no one to share context with at all)."
+        ),
+        "status": "",
+        "date_found": TODAY,
+    },
+    {
+        "name": "Clwyd Probert",
+        "title": "CEO & Founder, AI Consultant",
+        "company": "Whitehat (UK) -- AI consulting",
+        "profile_link": "https://uk.linkedin.com/in/clwyd-probert",
+        "contact_method": "LinkedIn only (no public email found)",
+        "kind": "operator",
+        "personal_detail": "you work as an AI consultant at Whitehat, helping businesses adopt AI",
+        "summary": (
+            "CEO/Founder and AI consultant; company size and exact scope of "
+            "Whitehat not independently confirmed -- single search snippet only."
+        ),
+        "match_reason": (
+            "Directly in the AI-adoption-for-small-business space -- strong "
+            "thematic fit, weaker company-size confirmation."
+        ),
+        "status": "",
+        "date_found": TODAY,
+    },
+    {
+        "name": "Clara Ma",
+        "title": "Chief of Staff (Employee #3)",
+        "company": "Kairos -- very early-stage startup",
+        "profile_link": "https://www.linkedin.com/in/clarama/",
+        "contact_method": "LinkedIn only (no public email found)",
+        "kind": "operator",
+        "personal_detail": "you're employee #3 and Chief of Staff at Kairos",
+        "summary": (
+            "Chief of Staff at a very early-stage startup (self-described as "
+            "employee #3) -- partners with founders through the hardest parts of "
+            "scaling. About as small/early as the ICP gets."
+        ),
+        "match_reason": (
+            "Employee #3 at an early-stage startup wearing the ops/chief-of-staff "
+            "hat -- textbook ICP fit on company stage."
+        ),
+        "status": "",
+        "date_found": TODAY,
+    },
+    {
+        "name": "Josephine Conneely",
+        "title": "Chief of Staff -- GTM, Operations, AI",
+        "company": "Unconfirmed (UK-based startup)",
+        "profile_link": "https://uk.linkedin.com/in/josephineconneely",
+        "contact_method": "LinkedIn only (no public email found)",
+        "kind": "operator",
+        "personal_detail": "your Chief of Staff role spanning GTM, Operations, and AI",
+        "summary": (
+            "Chief of Staff with GTM/Operations/AI explicitly in her title -- "
+            "current employer name and headcount not independently confirmed."
+        ),
+        "match_reason": (
+            "Title puts AI and ops in the same remit -- strong thematic fit; "
+            "company-size confirmation weaker than other rows."
+        ),
+        "status": "",
+        "date_found": TODAY,
+    },
+    {
+        "name": "Riddhi Sharma",
+        "title": "CEO & Founder",
+        "company": "Thought In A Dot -- content marketing agency",
+        "profile_link": "https://www.linkedin.com/in/sharmariddhi/",
+        "contact_method": "LinkedIn only (no public email found)",
+        "kind": "operator",
+        "personal_detail": "you're running Thought In A Dot as a content marketing agency and brand strategist",
+        "summary": (
+            "14+ years in leadership/brand content strategy, now founder/CEO of a "
+            "content marketing agency. Employee count unconfirmed."
+        ),
+        "match_reason": (
+            "Small agency founder in the marketing-ops-adjacent content space."
+        ),
+        "status": "",
+        "date_found": TODAY,
+    },
+    {
+        "name": "John Liska",
+        "title": "Founder",
+        "company": "Creative Engine (Austin, TX) -- branding & digital marketing agency",
+        "profile_link": "https://www.linkedin.com/in/john-liska-594a52193/",
+        "contact_method": "LinkedIn only (no public email found)",
+        "kind": "operator",
+        "personal_detail": "you founded Creative Engine, a branding and digital marketing agency in Austin",
+        "summary": (
+            "Founder of a small branding/digital marketing agency in Austin. "
+            "Employee count unconfirmed."
+        ),
+        "match_reason": (
+            "Small agency founder -- fits the company-stage band, size inferred "
+            "not confirmed."
+        ),
+        "status": "",
+        "date_found": TODAY,
+    },
+    {
+        "name": "Ajay G.",
+        "title": "Founder",
+        "company": "MAWD Agency -- Google Ads/SEO/websites for small businesses",
+        "profile_link": "https://www.linkedin.com/in/ajayg514/",
+        "contact_method": "LinkedIn only (no public email found)",
+        "kind": "operator",
+        "personal_detail": "you run MAWD Agency managing Google Ads, SEO, and websites for small businesses",
+        "summary": (
+            "Founder of a small AI-forward performance-marketing agency serving "
+            "small-business clients."
+        ),
+        "match_reason": (
+            "Small agency founder in the exact small-business-serving segment; "
+            "last-name not public in the source, listed as found."
+        ),
+        "status": "",
+        "date_found": TODAY,
+    },
+    {
+        "name": "Raj Goodman Anand",
+        "title": "Founder & CEO",
+        "company": "Goodman Lantern -- B2B content marketing agency",
+        "profile_link": "https://www.linkedin.com/in/rajanand/",
+        "contact_method": "LinkedIn only (no public email found)",
+        "kind": "operator",
+        "personal_detail": "you're running Goodman Lantern, a B2B content marketing agency",
+        "summary": (
+            "Founder/CEO of a B2B content marketing agency serving clients across "
+            "several continents -- distributed small team model, not independently "
+            "headcount-confirmed."
+        ),
+        "match_reason": (
+            "Founder wearing the ops/marketing hat; 'across five continents' framing "
+            "suggests a distributed small team rather than a large single office, "
+            "but worth double-checking size before approving."
+        ),
+        "status": "",
+        "date_found": TODAY,
+    },
+    {
+        "name": "Laney M. Silverman",
+        "title": "Founder",
+        "company": "The Design Boutique, Inc.",
+        "profile_link": "https://www.linkedin.com/in/thedesignboutique/",
+        "contact_method": "LinkedIn only (no public email found)",
+        "kind": "operator",
+        "personal_detail": "you run The Design Boutique and pride yourselves on being able to pivot quickly as a small shop",
+        "summary": (
+            "Founder of a self-described boutique design agency, explicitly "
+            "positioned around small-team speed/agility."
+        ),
+        "match_reason": (
+            "Explicitly 'boutique' self-positioning -- good qualitative company-size "
+            "signal even without a hard headcount number."
+        ),
+        "status": "",
+        "date_found": TODAY,
+    },
+    {
+        "name": "Thomas Kranzle",
+        "title": "Founder, Director",
+        "company": "Venture Visuals (Seattle) -- creative agency",
+        "profile_link": "https://www.linkedin.com/in/thomaskranzle/",
+        "contact_method": "LinkedIn only (no public email found)",
+        "kind": "operator",
+        "personal_detail": "you founded Venture Visuals, a creative agency in Seattle",
+        "summary": (
+            "Founder/Director of a small creative agency in Seattle. Headcount "
+            "unconfirmed."
+        ),
+        "match_reason": (
+            "Small agency founder -- company-stage fit inferred from agency type."
+        ),
+        "status": "",
+        "date_found": TODAY,
+    },
+    {
+        "name": "Santosh Kushwaha",
+        "title": "Founder",
+        "company": "Visual Best -- AI Creative Production Agency",
+        "profile_link": "https://in.linkedin.com/in/santosh-kushwaha-explorer",
+        "contact_method": "LinkedIn only (no public email found)",
+        "kind": "operator",
+        "personal_detail": "you're running Visual Best, an AI creative production agency",
+        "summary": (
+            "Founder of a small, explicitly AI-native creative production agency. "
+            "Headcount unconfirmed."
+        ),
+        "match_reason": (
+            "AI-native agency founder -- strong thematic fit, company size inferred "
+            "not confirmed."
+        ),
+        "status": "",
+        "date_found": TODAY,
+    },
 ]
 
 CONNECTORS = [

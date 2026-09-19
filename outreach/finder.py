@@ -43,6 +43,7 @@ COLUMNS = [
     ("contact_method", "Best Contact Method", 26),
     ("summary", "Profile Summary", 55),
     ("match_reason", "Match Reason", 50),
+    ("draft_message", "Draft Message", 65),
     ("status", "Status", 14),
     ("date_found", "Date Found", 14),
 ]
@@ -51,6 +52,46 @@ HEADER_FILL = PatternFill(start_color="1F2937", end_color="1F2937", fill_type="s
 HEADER_FONT = Font(color="FFFFFF", bold=True)
 WRAP = Alignment(wrap_text=True, vertical="top")
 LINK_FONT = Font(color="1155CC", underline="single")
+
+# Personalization style per outreach-pipeline-context.md: simple, specific, no
+# overselling, consistent core value prop with a varying reference point. There is
+# no working "click to send" URL for LinkedIn DMs (not supported), so this is a
+# copy-paste draft, not an auto-send link -- click Profile Link, click Message,
+# paste, edit, send.
+OPERATOR_TEMPLATE = (
+    "Hey {first_name} — saw {personal_detail}. Quick question: across your team, "
+    "does everyone end up using ChatGPT or Claude solo, with zero shared visibility "
+    "into what anyone else tried or decided? That's the exact gap I'm building "
+    "multiplayer for — a shared workspace where each person's AI agent posts its "
+    "work into one thread the whole team can see and jump into. Rounding up a few "
+    "small teams to test it free for 30-60 days in exchange for feedback — worth "
+    "a quick look?"
+)
+CONSULTANT_TEMPLATE = (
+    "Hey {first_name} — saw {personal_detail}. Curious if this resonates: across "
+    "the small teams/clients you work with, is everyone using ChatGPT or Claude on "
+    "their own, with no shared visibility into what got tried or decided? That's "
+    "the gap I'm building multiplayer for — a shared workspace where a team's AI "
+    "agents post their work into one thread instead of staying siloed in separate "
+    "chats. Looking for a few small teams to test it free in exchange for feedback "
+    "— think any of your clients (or you) would want an early look?"
+)
+CONNECTOR_TEMPLATE = (
+    "Hey {first_name} — saw {personal_detail}. I'm building multiplayer, a shared "
+    "AI workspace for small ops teams — not pitching the community, just curious "
+    "whether the 'everyone's using ChatGPT/Claude solo, zero shared visibility' "
+    "problem is something you hear from members often. Open to a quick chat, and "
+    "happy to share back whatever I learn."
+)
+
+
+def draft_message(row: dict) -> str:
+    first_name = row["name"].split()[0]
+    template = {
+        "operator": OPERATOR_TEMPLATE,
+        "consultant": CONSULTANT_TEMPLATE,
+    }.get(row.get("kind"), CONNECTOR_TEMPLATE)
+    return template.format(first_name=first_name, personal_detail=row.get("personal_detail", ""))
 
 
 def dedupe(rows: list[dict]) -> list[dict]:
@@ -76,7 +117,8 @@ def write_sheet(wb: Workbook, title: str, rows: list[dict]) -> None:
 
     for row_idx, row in enumerate(dedupe(rows), start=2):
         for col_idx, (key, _, _) in enumerate(COLUMNS, start=1):
-            cell = ws.cell(row=row_idx, column=col_idx, value=row.get(key, ""))
+            value = draft_message(row) if key == "draft_message" else row.get(key, "")
+            cell = ws.cell(row=row_idx, column=col_idx, value=value)
             cell.alignment = WRAP
             if key == "profile_link" and row.get(key):
                 cell.hyperlink = row[key]

@@ -17,9 +17,19 @@ CONNECTORS  -- marketing-ops community voices (newsletter authors, etc.) who rea
                Useful for community/content plays, not cold outreach -- kept in a
                separate tab so they don't get mixed into the approval queue by mistake.
 
+Each lead has "kind" ("operator" -- runs/works inside their own small team, or
+"consultant" -- fractional/agency serving several small clients at once) and
+"personal_detail" -- the one real, specific thing about them the draft message
+references, per outreach-pipeline-context.md's personalization style (simple,
+specific, no overselling). finder.py turns kind + personal_detail into the actual
+Draft Message column via a fixed template per outreach-pipeline-context.md's
+Pipeline 2 design -- the value prop stays constant, only the reference point varies.
+
 Every row starts with Status="" (blank) -- Charles fills in Approved/Rejected by hand
 per the approval-gate design in outreach-pipeline-context.md. Nothing here has been
-contacted.
+contacted. There is no working "click to send" link for LinkedIn DMs -- LinkedIn does
+not support pre-filled message URLs -- so the workflow is: click Profile Link, click
+Message, paste Draft Message, edit if needed, send.
 """
 
 from datetime import date
@@ -33,6 +43,8 @@ LEADS = [
         "company": "PrecisionRevOps LLC",
         "profile_link": "https://www.linkedin.com/in/elizabeth-danowski-8b264513/",
         "contact_method": "LinkedIn only (no public email found)",
+        "kind": "consultant",
+        "personal_detail": "you're running RevOps solo through PrecisionRevOps for multiple SaaS clients",
         "summary": (
             "Runs her own small RevOps consulting practice (PrecisionRevOps LLC) "
             "focused on people/process/technology, CRM migration, and data quality "
@@ -53,6 +65,8 @@ LEADS = [
         "company": "Lamande LLC (fractional RevOps for early/mid-stage SaaS); concurrent fractional roles at Rev, AgentSync, Ekho, OperateWise",
         "profile_link": "https://www.linkedin.com/in/jeremy-lamande/",
         "contact_method": "LinkedIn only (no public email found)",
+        "kind": "consultant",
+        "personal_detail": "you're juggling fractional RevOps/CRO roles across Rev, AgentSync, Ekho, and OperateWise at once",
         "summary": (
             "20 years building RevOps functions from scratch; now runs Lamande LLC, "
             "a fractional RevOps/CRO practice serving several early-to-mid-stage SaaS "
@@ -72,6 +86,8 @@ LEADS = [
         "company": "Revenue Wizards",
         "profile_link": "https://www.linkedin.com/posts/harisodobasic_what-does-revops-do-revenue-operations-activity-7263475951290740736-3JwA",
         "contact_method": "LinkedIn only (no public email found)",
+        "kind": "consultant",
+        "personal_detail": "your recent post on what RevOps actually does and removing GTM silos",
         "summary": (
             "Co-founder of Revenue Wizards, a small revenue-strategy consulting firm. "
             "Posts regularly on LinkedIn about what RevOps does and removing GTM silos."
@@ -90,6 +106,8 @@ LEADS = [
         "company": "Independent — C-Suite advisor across SaaS/AI/startup clients",
         "profile_link": "https://www.linkedin.com/in/deepa--patel/",
         "contact_method": "LinkedIn only (no public email found)",
+        "kind": "consultant",
+        "personal_detail": "you're advising several high-growth startups at once as a fractional RevOps/strategy leader",
         "summary": (
             "15+ years across RevOps, Marketing Ops, Enablement, Strategy and Finance; "
             "now works independently as a fractional/advisory leader to multiple "
@@ -109,6 +127,8 @@ LEADS = [
         "company": "Independent — B2B SaaS clients (~$2M+ ARR)",
         "profile_link": "https://www.linkedin.com/in/mariyavaleva-yourscalingpartner/",
         "contact_method": "LinkedIn only (no public email found)",
+        "kind": "consultant",
+        "personal_detail": "you work as a fractional CFO across multiple early-stage B2B SaaS clients",
         "summary": (
             "Fractional CFO working with early-stage B2B SaaS companies around the "
             "$2M+ ARR mark -- i.e. the 5-50 person stage. Finance/ops-adjacent rather "
@@ -128,6 +148,8 @@ LEADS = [
         "company": "GROW Marketing Agency (St. Louis, MO)",
         "profile_link": "https://www.linkedin.com/in/katherynhunt/",
         "contact_method": "LinkedIn only (no public email found)",
+        "kind": "operator",
+        "personal_detail": "you're running GROW Marketing Agency as a small, founder-led shop",
         "summary": (
             "Founder/CEO of a small digital marketing agency (web design, digital "
             "marketing, branding). Confirmed small: 1-10 employees per Crunchbase, "
@@ -146,6 +168,8 @@ LEADS = [
         "company": "Growth Union (Chicago) -- boutique growth agency for early-stage B2B SaaS",
         "profile_link": "https://www.linkedin.com/in/adam-goyette/",
         "contact_method": "LinkedIn only (no public email found)",
+        "kind": "operator",
+        "personal_detail": "you've built a lean senior team at Growth Union for early-stage B2B SaaS clients like Writer and Recorded Future",
         "summary": (
             "Ex-Help Scout / G2 growth marketing exec, now runs a small agency "
             "assembling senior marketers for early-stage B2B SaaS clients (Writer, "
@@ -167,6 +191,8 @@ LEADS = [
         "company": "Lynx Growth Agency (Hallandale Beach, FL)",
         "profile_link": "https://www.linkedin.com/in/david-malevsky/",
         "contact_method": "LinkedIn only (no public email found)",
+        "kind": "operator",
+        "personal_detail": "you're building Lynx Growth Agency around AI-driven marketing and automation",
         "summary": (
             "Co-founder of a boutique agency (patient acquisition for regenerative/"
             "integrative clinics) built around AI-driven marketing and automation. "
@@ -187,6 +213,8 @@ LEADS = [
         "company": "Forecastio (B2B sales forecasting for HubSpot)",
         "profile_link": "https://www.linkedin.com/in/alexzlotko/",
         "contact_method": "LinkedIn only (no public email found)",
+        "kind": "operator",
+        "personal_detail": "your writing on AI agents in RevOps as CEO of Forecastio",
         "summary": (
             "17 years in B2B sales/CS, now CEO of Forecastio, a small SaaS company "
             "building sales forecasting tools. Publishes regularly on AI agents in "
@@ -206,6 +234,8 @@ LEADS = [
         "company": "Independent -- RevOpsVision (Berlin)",
         "profile_link": "https://www.linkedin.com/in/kriswille-revopsvision-revenue-operations-consultant-advisory/",
         "contact_method": "LinkedIn only (no public email found)",
+        "kind": "consultant",
+        "personal_detail": "your tagline about helping startups supercharge their small RevOps teams",
         "summary": (
             "10+ years in SalesOps/RevOps in Berlin's startup scene. Self-positions "
             "explicitly as helping 'C-Level Leaders & Startups Supercharge Their "
@@ -225,6 +255,8 @@ LEADS = [
         "company": "Independent / embedded RevOps for startups",
         "profile_link": "https://www.linkedin.com/in/donnasluijter/",
         "contact_method": "LinkedIn only (no public email found)",
+        "kind": "consultant",
+        "personal_detail": "your work bridging gaps and scaling teams as a startup RevOps operator",
         "summary": (
             "Self-describes as a 'Startup Operator' bridging gaps and scaling teams "
             "in RevOps and strategy roles -- language that matches the ICP's "
@@ -243,6 +275,8 @@ LEADS = [
         "company": "Sequoia Solutions -- RevOps/HubSpot consultancy for early-stage B2B tech",
         "profile_link": "https://www.linkedin.com/in/john-mcardle-m-s-71b58178/",
         "contact_method": "LinkedIn only (no public email found)",
+        "kind": "consultant",
+        "personal_detail": "the dozens of early-stage companies you've helped clean up CRM/HubSpot data at Sequoia Solutions",
         "summary": (
             "Founded a small consultancy that has worked with dozens of early-stage "
             "companies cleaning up CRM/HubSpot data and building GTM systems -- "
@@ -261,6 +295,8 @@ LEADS = [
         "company": "Revenue Hub Latam -- RevOps + HubSpot for B2B companies in LATAM",
         "profile_link": "https://www.linkedin.com/in/robguerra/",
         "contact_method": "LinkedIn only (no public email found)",
+        "kind": "consultant",
+        "personal_detail": "your posts on pipeline, forecasting, and AI at Revenue Hub Latam",
         "summary": (
             "Runs a boutique RevOps/HubSpot consultancy for B2B companies across "
             "LATAM, publicly writing about pipeline, CRM, forecasting -- and AI."
@@ -278,6 +314,8 @@ LEADS = [
         "company": "Boutique RevOps consultancy -- B2B SaaS GTM systems",
         "profile_link": "https://www.linkedin.com/in/kristybuige/",
         "contact_method": "LinkedIn only (no public email found)",
+        "kind": "consultant",
+        "personal_detail": "scaling GTM systems for B2B SaaS companies through your boutique RevOps consultancy",
         "summary": (
             "Founded and leads a boutique RevOps consultancy enabling B2B SaaS "
             "companies to scale GTM systems, processes, and revenue performance."
@@ -296,6 +334,8 @@ LEADS = [
         "company": "The SaaS Consultants -- fractional CMO / marketing agency for SaaS",
         "profile_link": "https://www.linkedin.com/in/johnathan-wang/",
         "contact_method": "LinkedIn only (no public email found)",
+        "kind": "operator",
+        "personal_detail": "you built your own AI-powered social media tooling while running The SaaS Consultants",
         "summary": (
             "Runs a small fractional-CMO agency for SaaS businesses and has "
             "personally built social-media-management software using Python/"
@@ -317,6 +357,7 @@ CONNECTORS = [
         "company": "Substack (independent) — background includes marketing ops leadership at Amazon",
         "profile_link": "https://darrellalfonso.substack.com/",
         "contact_method": "Substack / LinkedIn",
+        "personal_detail": "your newsletter on marketing ops team structure and career growth",
         "summary": (
             "Widely-read voice in the marketing-ops community; writes about team "
             "structure, career growth, and AI adoption in MOps. Not himself a 5-50 "
@@ -336,6 +377,7 @@ CONNECTORS = [
         "company": "Substack (independent)",
         "profile_link": "https://jenbergren.substack.com/",
         "contact_method": "Substack / LinkedIn",
+        "personal_detail": "your weekly newsletter for the marketing ops community",
         "summary": (
             "Runs a long-running weekly newsletter for the marketing ops community; "
             "frequently features guest practitioners and AI-adoption discussion."
@@ -353,6 +395,7 @@ CONNECTORS = [
         "company": "MarketingOps.com / MO Pros",
         "profile_link": "https://www.linkedin.com/in/mikedrizzo/",
         "contact_method": "LinkedIn only (no public email found)",
+        "personal_detail": "MO Pros hitting 4,000+ marketing/RevOps members",
         "summary": (
             "Founded and runs MO Pros, the 4,000+ member marketing-ops community "
             "outreach-pipeline-context.md names directly as a target community. "

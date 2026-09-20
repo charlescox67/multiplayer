@@ -49,6 +49,7 @@ COLUMNS = [
     ("confidence", "Confidence", 12),
     ("summary", "Profile Summary", 55),
     ("match_reason", "Match Reason", 50),
+    ("subject", "Subject", 40),
     ("draft_message", "Draft Message", 65),
     ("status", "Status", 14),
     ("date_found", "Date Found", 14),
@@ -106,6 +107,20 @@ CONNECTOR_TEMPLATE = (
     "hear about often from your community? Curious what you're seeing."
 )
 
+# Only LinkedIn InMail (messaging someone outside your network) has a subject
+# field; a message to an existing 1st-degree connection has none, so this is
+# blank-safe to ignore there. Same rule as the message body: no product name,
+# no "building," just what the note is about.
+SUBJECT_BY_KIND = {
+    "operator": "Question about your team and AI tools",
+    "consultant": "Question about your clients and AI tools",
+}
+CONNECTOR_SUBJECT = "Question about AI usage in your community"
+
+
+def subject(row: dict) -> str:
+    return SUBJECT_BY_KIND.get(row.get("kind"), CONNECTOR_SUBJECT)
+
 
 def draft_message(row: dict) -> str:
     first_name = row["name"].split()[0]
@@ -146,6 +161,8 @@ def write_sheet(wb: Workbook, title: str, rows: list[dict]) -> None:
         for col_idx, (key, _, _) in enumerate(COLUMNS, start=1):
             if key == "draft_message":
                 value = draft_message(row)
+            elif key == "subject":
+                value = subject(row)
             elif key == "confidence":
                 value = confidence(row)
             else:

@@ -84,30 +84,26 @@ LINK_FONT = Font(color="1155CC", underline="single")
 # copy-paste draft, not an auto-send link -- click Profile Link, click Message,
 # paste, edit, send.
 #
-# No product exists yet, so this is not a pitch. The ask is a research question:
-# how does the person's team actually use AI tools day to day, and is there any
-# shared visibility across teammates, or does it stay solo per person. That's the
-# input to deciding what (if anything) to build.
+# No product exists yet, and the message doesn't say otherwise -- no "I'm
+# building," no "before building anything," no mention of multiplayer or any
+# product. Just the personalized detail and direct questions about how the
+# person's team actually uses AI and whether that usage is shared or solo.
 OPERATOR_TEMPLATE = (
-    "Hey {first_name}, saw {personal_detail}. I'm looking into how small teams "
-    "actually use AI day to day before building anything. Quick question: across "
-    "your team, does everyone end up using ChatGPT or Claude on their own, or is "
-    "there any shared visibility into what people are trying or deciding? Would "
-    "you be open to a quick chat about how your team handles it?"
+    "Hey {first_name}, saw {personal_detail}. Question for you: does your "
+    "team use ChatGPT or Claude much, and if so, is it mostly everyone working "
+    "solo, or is there any shared visibility into what people are trying or "
+    "deciding? Curious how you all handle it."
 )
 CONSULTANT_TEMPLATE = (
-    "Hey {first_name}, saw {personal_detail}. I'm looking into how small teams "
-    "actually use AI day to day before building anything. Quick question: across "
-    "the teams or clients you work with, is AI tool usage mostly solo, or is "
-    "there any shared visibility into what's being tried? Would love your read, "
-    "open to a quick chat?"
+    "Hey {first_name}, saw {personal_detail}. Question for you: across the "
+    "teams or clients you work with, is AI tool usage mostly a solo thing per "
+    "person, or is there any shared visibility into what's being tried? "
+    "Curious what you're seeing."
 )
 CONNECTOR_TEMPLATE = (
-    "Hey {first_name}, saw {personal_detail}. I'm researching how small ops "
-    "teams actually use AI day to day, not pitching anything yet. Curious "
-    "whether solo AI usage with little shared visibility across a team is a "
-    "theme you hear from your community. Open to a quick chat, and happy to "
-    "share back whatever I learn."
+    "Hey {first_name}, saw {personal_detail}. Question for you: is solo AI "
+    "tool usage with little shared visibility across a team something you "
+    "hear about often from your community? Curious what you're seeing."
 )
 
 
